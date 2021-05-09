@@ -1,0 +1,80 @@
+
+.header {
+  width: 100%;
+  height: 8.514375rem;
+
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__contain {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 0 auto;
+
+    &__nav {
+      width: auto;
+      height: 100%;
+
+      &__list {
+        width: auto;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+      }
+
+      &__item {
+        a {
+          color: #4F5665;
+          font-size: 1rem;
+          padding: 0 1.25rem;
+          font-family: Rubik, sans-serif;
+          transition: all .2s ease-in-out;
+
+          &:hover {
+            filter: brightness(50%);
+          }
+        }
+      }
+    }
+  }
+
+  &__beourcostumer {
+    width: auto;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    a {
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: Rubik, sans-serif;
+      transition: all .2s ease-in-out;
+      
+      &:not(.button) {
+        color: #0B132A;
+
+        &:hover {
+          color: #0b132ab8;
+        }
+      }
+
+      &.button {
+        margin-left: 1.875rem;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

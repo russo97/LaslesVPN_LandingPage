@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -12,5 +13,123 @@ html,
 body {
   height: 100%;
   font-size: 100%;
+}
+
+body {
+  background-color: #fff;
+}
+
+.button {
+  width: auto;
+}
+
+.button__primary {
+  color: #F53855;
+  border-radius: 3.125rem;
+  padding: .8125rem 2.8125rem;
+  border: solid 1px #F53855;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.button__primary:hover {
+  background-color: #F53855;
+}
+
+.container {
+  max-width: 71.25rem;
+}
+
+.header {
+  width: 100%;
+  height: 8.514375rem;
+}
+
+.header__container {
+  width: 100%;
+  height: 100%;
+}
+
+.header__contain {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+}
+
+.header__contain__nav {
+  width: auto;
+  height: 100%;
+}
+
+.header__contain__nav__list {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.header__contain__nav__item a {
+  color: #4F5665;
+  font-size: 1rem;
+  padding: 0 1.25rem;
+  font-family: Rubik, sans-serif;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.header__contain__nav__item a:hover {
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+}
+
+.header__beourcostumer {
+  width: auto;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__beourcostumer a {
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: Rubik, sans-serif;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.header__beourcostumer a:not(.button) {
+  color: #0B132A;
+}
+
+.header__beourcostumer a:not(.button):hover {
+  color: #0b132ab8;
+}
+
+.header__beourcostumer a.button {
+  margin-left: 1.875rem;
+}
+
+.header__beourcostumer a.button:hover {
+  color: #fff;
 }
 /*# sourceMappingURL=stylesheet.css.map */
