@@ -1,11 +1,33 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap');
 
 body {
   background-color: #fff;
 }
 
-// button,
+button.button {
+  color: #fff;
+  cursor: pointer;
+  border: 0 none;
+  font-size: 1rem;
+  height: 3.75rem;
+  width: 15.625rem;
+  font-weight: bold;
+
+  margin-top: 3.125rem;
+  line-height: 1.5625rem;
+  border-radius: .625rem;
+  background-color: #F53838;
+  transition: all .2s ease-in-out;
+  font-family: 'Rubik', sans-serif;
+
+  box-shadow: 0px 2rem 1.6875rem -1.1875rem #f53838;
+
+  &:active {
+    transform: scale(.98);
+  }
+}
+
 .button {
   width: auto;
 
@@ -23,5 +45,6 @@ body {
 }
 
 .container {
+  margin: 0 auto;
   max-width: 71.25rem;
 }
