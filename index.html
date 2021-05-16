@@ -12,6 +12,8 @@
   </head>
   <body>
 
+    <div class="overlay"></div>
+
     <header class="header">
       <div class="header__container">
         <div class="header__contain container">
@@ -43,10 +45,16 @@
             </ul>
           </nav>
 
-          <div class="header__beourcostumer">
+          <div class="header__beourcostumer hide__mobile">
             <a href="#">Sign In</a>
             <a href="#" class="button button__primary">Sign Up</a>
           </div>
+
+          <span class="header__hamburguer hide__desktop">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
         </div>
       </div>
     </header>
@@ -71,12 +79,47 @@
 
           <div class="hero__contain__rightbox">
             <div class="hero__contain__rightbox__imagehero">
-
+              &nbsp;
             </div>
           </div>
 
         </div>
       </main>
+    </section>
+
+
+
+
+    <section class="statistics">
+      <div class="statistics__container">
+        <div class="statistics__contain container">
+
+          <div class="statistics__item users">
+            <span class="icon"></span>
+            <div class="statistics__item__info">
+              <h4 class="statistics__item__info__title">90+</h4>
+              <p class="statistics__item__info__label">Users</p>
+            </div>
+          </div>
+
+          <div class="statistics__item locations">
+            <span class="icon"></span>
+            <div class="statistics__item__info">
+              <h4 class="statistics__item__info__title">30+</h4>
+              <p class="statistics__item__info__label">Locations</p>
+            </div>
+          </div>
+
+          <div class="statistics__item servers">
+            <span class="icon"></span>
+            <div class="statistics__item__info">
+              <h4 class="statistics__item__info__title">50+</h4>
+              <p class="statistics__item__info__label">Servers</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
     
   </body>

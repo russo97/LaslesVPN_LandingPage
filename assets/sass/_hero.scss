@@ -2,8 +2,12 @@
 .hero {
   width: 100%;
   height: 20.625rem;
-
   margin-top: 7.5rem;
+
+  @media (max-width: 66.25rem) {
+    height: auto;
+  }
+
 
   &__container {
     width: 100%;
@@ -18,6 +22,11 @@
     align-items: center;
     justify-content: space-between;
 
+    @media (max-width: 48rem) {
+      flex-direction: column;
+      justify-content: center;
+    }
+
     &__leftbox,
     &__rightbox {
       flex: 1 50%;
@@ -31,6 +40,11 @@
       align-items: flex-start;
       justify-content: center;
 
+      @media (max-width: 48rem) {
+        order: 2;
+        align-items: center;
+      }
+
       &__title {
         color: #0B132A;
         font-weight: 500;
@@ -40,6 +54,12 @@
 
         & .bold {
           font-weight: 700;
+        }
+
+        @media (max-width: 71.25rem) {
+          text-align: center;
+          font-size: clamp(1.875rem, 5vw, 3.125rem);
+          line-height: clamp(2.1875rem, 15vh, 4.375rem);
         }
       }
 
@@ -54,20 +74,36 @@
         & .bold {
           font-weight: 500;
         }
+
+        @media (max-width: 48rem) {
+          text-align: center;
+        }
       }
-
-
     }
 
     &__rightbox {
+      @media (max-width: 48rem) {
+        width: 100%;
+        order: 1;
+        display: block;
+      }
+
       &__imagehero {
         width: 38.1875rem;
         height: 100%;
+
+        display: block;
 
         background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url('../images/illustration1.svg');
+
+        @media (max-width: 71.25rem) {
+          width: 100%;
+          max-width: 38.1875rem;
+          height: 382px;
+        }
       }
     }
   }
