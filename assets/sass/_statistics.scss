@@ -4,6 +4,10 @@
   height: 12.5rem;
   margin-top: 6.375rem;
 
+  @media (max-width: 37.5rem) {
+    height: auto;
+  }
+
   &__container {
     height: 100%;
   }
@@ -14,18 +18,24 @@
     align-items: center;
     justify-content: space-around;
 
-    @media (max-width: 37.5rem) {
-      flex-direction: column;
+    @media (min-width: 71.25rem) {
+      border-radius: .625rem;
+      box-shadow: 0 20px 68px -38px #aaa;
     }
   }
 
   &__item {
-    width: 9.375rem;
+    width: 11.25rem;
     height: auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 37.5rem) {
+      width: 200px;
+      flex-direction: column;
+    }
 
     @each $type in ( users, locations, servers ) {
       &.#{$type} .icon {
@@ -33,24 +43,30 @@
       }
     }
 
-    @media (max-width: 37.5rem) {
-      width: 200px;
-    }
-
     .icon {
-      display: block;
+      flex: 1 1 auto;
+      display: inline-block;
       width: 3.4375rem;
       height: 3.4375rem;
+      min-width: 3.4375rem;
+      max-width: 3.4375rem;
       background-size: 100%;
+      margin-right: 2.28125rem;
       background-position: center;
       background-repeat: no-repeat;
+
+      @media (max-width: 37.5rem) {
+        margin: 0 0 1rem;
+      }
     }
 
     &__info {
-      margin-left: 2.28125rem;
+      flex: 1 50%;
 
       @media (max-width: 37.5rem) {
+        margin: 0;
         width: 100%;
+        text-align: center;
       }
 
       &__title {
