@@ -12,27 +12,44 @@
   new Vue({
     el: '#app',
 
+    data () {
+      return {
+        isMenuOpened: false,
+        isOverlayVisible: false
+      };
+    },
+
     methods: {
       toggleSideMenu () {
-        sideMenu.classList.toggle('open');
-        overlay.classList.toggle('visible', this.isMenuOpened);
+        const { isMenuOpened, isOverlayVisible } = this;
+
+        overlay.classList.toggle('visible', !isMenuOpened);
+        sideMenu.classList.toggle('open', !isOverlayVisible);
+
+        if (!isMenuOpened) {
+          this.resetPosition();
+        }
+
+        this.isMenuOpened = !this.isMenuOpened;
+        this.isOverlayVisible = !this.isOverlayVisible;
       },
 
       handleOverlay () {
         const { isMenuOpened, toggleSideMenu } = this;
 
         isMenuOpened && toggleSideMenu();
+      },
+
+      resetPosition () {
+        window.scrollTo(0, 0);
       }
     },
 
     computed: {
-      isMenuOpened () {
-        return sideMenu.classList.contains('open')
-      }
     },
 
     created () {
-      overlay.addEventListener('click', this.handleOverlay)
+      overlay.addEventListener('click', this.handleOverlay);
       hamburger.addEventListener('click', this.toggleSideMenu);
     }
   });

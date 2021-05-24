@@ -21,7 +21,7 @@ body {
     transition:
       opacity .3s $bezier,
       visibility .3s $bezier .3s;
-    background-color: rgba($color: #000, $alpha: .4);
+    background-color: rgba(#000, .4);
 
     &.visible {
       opacity: 1;
