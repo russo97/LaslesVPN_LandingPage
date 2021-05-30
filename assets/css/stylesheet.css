@@ -99,7 +99,7 @@ button.button:active {
   }
 }
 
-@media (min-width: 57.1875rem) {
+@media (min-width: 57.25rem) {
   .hide__desktop {
     display: none !important;
   }
