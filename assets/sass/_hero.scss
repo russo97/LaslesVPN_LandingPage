@@ -84,21 +84,17 @@
 
     &__rightbox {
       @media (max-width: 48rem) {
-        width: 100%;
         order: 1;
+        width: 100%;
         display: block;
       }
 
       &__imagehero {
-        width: 38.1875rem;
         height: 100%;
+        width: 38.1875rem;
 
         display: block;
-
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url('../images/illustration1.svg');
+        background: url('../images/illustration1.svg') center / contain no-repeat;
 
         @media (max-width: 71.25rem) {
           width: 100%;
