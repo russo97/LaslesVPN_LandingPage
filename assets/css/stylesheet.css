@@ -699,4 +699,48 @@ button.button:active {
   margin: 0 .625rem 0 0;
   background: transparent url("../images/checked.svg") center/cover no-repeat;
 }
+
+.chooseplan__container {
+  width: 100%;
+  background-color: #fafafa;
+}
+
+.chooseplan__container .chooseplan__contain {
+  padding: 80px 0;
+}
+
+.chooseplan__header {
+  text-align: center;
+}
+
+.chooseplan__header-title {
+  color: #0B132A;
+  font-weight: 500;
+  font-size: 2.1875rem;
+  line-height: 3.125rem;
+}
+
+.chooseplan__header-description {
+  font-size: 1rem;
+  max-width: 442px;
+  margin: 20px auto 0;
+  line-height: 1.875rem;
+}
+
+.chooseplan__body .chooseplan__plan {
+  padding: 60px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.chooseplan__body .chooseplan__plan-item {
+  width: 330px;
+  height: 760px;
+  border-radius: .625rem;
+  border: solid 2px #DDDDDD;
+}
 /*# sourceMappingURL=stylesheet.css.map */
