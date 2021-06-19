@@ -39,8 +39,19 @@
       &-item {
         width: 330px;
         height: 760px;
+        cursor: pointer;
         border-radius: .625rem;
+        background-color: #fff;
         border: solid 2px #DDDDDD;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+          border-color: #F5383880;
+        }
+
+        &.active {
+          border-color: #F53838;
+        }
       }
     }
   }

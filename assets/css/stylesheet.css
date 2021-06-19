@@ -740,7 +740,19 @@ button.button:active {
 .chooseplan__body .chooseplan__plan-item {
   width: 330px;
   height: 760px;
+  cursor: pointer;
   border-radius: .625rem;
+  background-color: #fff;
   border: solid 2px #DDDDDD;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.chooseplan__body .chooseplan__plan-item:hover {
+  border-color: #F5383880;
+}
+
+.chooseplan__body .chooseplan__plan-item.active {
+  border-color: #F53838;
 }
 /*# sourceMappingURL=stylesheet.css.map */
