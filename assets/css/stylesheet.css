@@ -746,6 +746,19 @@ button.button:active {
   border: solid 2px #DDDDDD;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .chooseplan__body .chooseplan__plan-item:hover {
@@ -755,4 +768,59 @@ button.button:active {
 .chooseplan__body .chooseplan__plan-item.active {
   border-color: #F53838;
 }
-/*# sourceMappingURL=stylesheet.css.map */
+
+.chooseplan__body .chooseplan__plan-icon {
+  margin-top: 79px;
+  max-width: 144px;
+  max-height: 165px;
+}
+
+.chooseplan__body .chooseplan__plan-icon img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.chooseplan__body .chooseplan__plan-details {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  text-align: center;
+}
+
+.chooseplan__body .chooseplan__plan-details .details__title {
+  margin: 30px 0;
+  font: 500 1.125rem 'Rubik', sans-serif;
+}
+
+.chooseplan__body .chooseplan__plan-details .details__list {
+  margin: 0 auto;
+  width: calc(100% - 110px);
+}
+
+.chooseplan__body .chooseplan__plan-details .details__list-item {
+  padding: 2px 0;
+  color: #4F5665;
+  font: 400 .875rem 'Rubik', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.chooseplan__body .chooseplan__plan-details .details__list-item:not(:first-child), .chooseplan__body .chooseplan__plan-details .details__list-item:not(:last-child) {
+  margin: 10px 0;
+}
+
+.chooseplan__body .chooseplan__plan-details .details__list-item .icon.checked {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+  display: inline-block;
+  background: transparent url("../images/jam_check.svg") center/cover no-repeat;
+}
