@@ -56,6 +56,13 @@
 
         &.active {
           border-color: #F53838;
+
+          // change button style when inside a box that is active
+          button[class$="-button"] {
+            color: #fff;
+            background-color: #F53838;
+            box-shadow: 0 5px 20px -7px #F53838;
+          }
         }
       }
 
@@ -106,6 +113,36 @@
                 background: transparent url('../images/jam_check.svg') center / cover no-repeat;
               }
             }
+          }
+        }
+      }
+
+      &-buy {
+        width: 100%;
+        text-align: center;
+
+        .buy__plan {
+          &-price {
+            color: #0B132A;
+            font: 600 1.5625rem 'Rubik', sans-serif;
+          }
+
+          &-period {
+            color: #4F5665;
+            font-weight: 400;
+          }
+
+          &-button {
+            width: 177px;
+            height: 45px;
+            cursor: pointer;
+            color: #F53838;
+            margin: 20px 0 50px;
+            border-radius: 3.125rem;
+            border: solid 2px #F53838;
+            background-color: transparent;
+            transition: all .3s ease-in-out;
+            font: 700 1rem 'Rubik', sans-serif;
           }
         }
       }

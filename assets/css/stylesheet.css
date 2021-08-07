@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -769,6 +769,13 @@ button.button:active {
   border-color: #F53838;
 }
 
+.chooseplan__body .chooseplan__plan-item.active button[class$="-button"] {
+  color: #fff;
+  background-color: #F53838;
+  -webkit-box-shadow: 0 5px 20px -7px #F53838;
+          box-shadow: 0 5px 20px -7px #F53838;
+}
+
 .chooseplan__body .chooseplan__plan-icon {
   margin-top: 79px;
   max-width: 144px;
@@ -824,3 +831,33 @@ button.button:active {
   display: inline-block;
   background: transparent url("../images/jam_check.svg") center/cover no-repeat;
 }
+
+.chooseplan__body .chooseplan__plan-buy {
+  width: 100%;
+  text-align: center;
+}
+
+.chooseplan__body .chooseplan__plan-buy .buy__plan-price {
+  color: #0B132A;
+  font: 600 1.5625rem 'Rubik', sans-serif;
+}
+
+.chooseplan__body .chooseplan__plan-buy .buy__plan-period {
+  color: #4F5665;
+  font-weight: 400;
+}
+
+.chooseplan__body .chooseplan__plan-buy .buy__plan-button {
+  width: 177px;
+  height: 45px;
+  cursor: pointer;
+  color: #F53838;
+  margin: 20px 0 50px;
+  border-radius: 3.125rem;
+  border: solid 2px #F53838;
+  background-color: transparent;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  font: 700 1rem 'Rubik', sans-serif;
+}
+/*# sourceMappingURL=stylesheet.css.map */
