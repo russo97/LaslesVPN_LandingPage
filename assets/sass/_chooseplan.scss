@@ -148,4 +148,19 @@
       }
     }
   }
+
+  @media (max-width: 48rem) {
+    &__body {
+      #{$this}__plan {
+        align-items: center;
+        flex-direction: column;
+
+        &-item {
+          &:not(:first-child) {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
 }

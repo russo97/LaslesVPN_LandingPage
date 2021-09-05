@@ -860,4 +860,19 @@ button.button:active {
   transition: all .3s ease-in-out;
   font: 700 1rem 'Rubik', sans-serif;
 }
+
+@media (max-width: 48rem) {
+  .chooseplan__body .chooseplan__plan {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .chooseplan__body .chooseplan__plan-item:not(:first-child) {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=stylesheet.css.map */
